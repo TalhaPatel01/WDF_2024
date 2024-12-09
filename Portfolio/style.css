@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -27,6 +28,21 @@ header nav a {
 
 header nav a:hover {
     text-decoration: underline;
+}
+
+button#theme-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button#theme-toggle:hover {
+    background-color: #0056b3;
 }
 
 main {
@@ -66,4 +82,40 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+body.dark-theme header {
+    background: #222;
+}
+
+body.dark-theme section h2 {
+    color: #f4f4f4;
+    border-bottom: 2px solid #555;
+}
+
+body.dark-theme footer {
+    background: #222;
+}
+
+body.dark-theme a {
+    color: #f4f4f4;
+}
+
+body.dark-theme a:hover {
+    color: #ddd;
+}
+
+body.dark-theme button#theme-toggle {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-theme button#theme-toggle:hover {
+    background-color: #222;
 }
